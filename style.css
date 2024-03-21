@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Palanquin:wght@100;200;300;400;500;600;700&family=Play:wght@400;700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Palanquin", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+body{
+    overflow: hidden;
+}
+nav .navitems{
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    font-size: large;
+}
+.navitems h3{
+    background-color:teal;
+    padding: 5px;
+    border-radius: 10px;
+    /* color: orange; */
+}
+.items li{
+    display: inline;
+    margin: 0px 20px;
+    font-size: large;
+   
+}
+.items li a{
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+.items li a::after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    bottom: -3px;
+    left: 0px;
+    width: 0px;
+    height: 3px;
+    transition: all 0.3s ease; 
+}
+.items li a:hover::after{
+    width: 100%;
+}
+
+
+
+section{
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+}
+article{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+#main {
+    background-color: teal;
+    width: 170px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 20px; 
+    position: relative; 
+    overflow: hidden; 
+    transition: height 0.3s;
+   
+}
+#main-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 100px;
+    transition: all 0.6s ease-in-out;
+    color: wheat;
+}
+#main:hover #main-content{
+    transform: translateY(-190px);
+}
+#main-content hr{
+    margin-top: 10px;
+    border-color: rgba(0, 0, 0, 0.671);
+    box-shadow: 0px 0px 5px 0px whitesmoke;
+    
+}
+#main:hover hr{
+    border:none;
+    transition: all 0.9s ease-in-out;
+   
+}
+
+#hover-content {
+    background: linear-gradient(to bottom, transparent, rgba(255, 123, 71, 0.863));
+    width: 250px;
+    height: 800px;
+    margin: 0%;
+    position: relative;
+    top: 270px;
+    left: -20px; 
+    transition: transform 0.9s; 
+    padding: 15px;
+   
+    
+   
+}
+#hover-content p{
+    padding-top: 80px;
+    padding-left: 10px;
+    line-height: 1.2;
+    font-size: 20px; 
+    white-space: pre-wrap;
+
+}
+
+
+
+#main:hover #hover-content {
+    transform: translateZ(0); 
+    transform: translateY(-225px);
+}
+
+
+
+
+.material-symbols-outlined.icon{
+    font-size: 60px;
+}
+.content-expand #main-content {
+    background-color: aqua;
+}
+
+.author {
+    display: flex;
+    position: absolute;
+    top: 90vh;
+    right:10vh;
+    margin-left: 40px;
+    border: 1px solid teal;
+    border-radius: 10px;
+}
+
+
+.author a {
+    text-decoration: none;
+    color:orange;
+    margin: 5px;
+}
+.author span a{
+    /* text-align: center; */
+    position: relative;
+    top: 20%;
+}
+
+
